@@ -1,0 +1,133 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Custom*/
+
+/*Variables*/
+:root {
+    --main-color: #000;
+    --secondary-color: #f8f8f8;
+
+    --main-font: "Roboto";
+    --main-fontsize: 16px;
+    --main-fontweight: 100;
+}
+
+
+body {
+    font-size: var(--main-fontsize);
+    font-family: var(--main-font), sans-serif;
+    font-weight: var(--main-fontweight);
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin: 25px 0;
+}
+
+a, a:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+
+/* Navigation */
+.navbar-brand {
+    vertical-align: middle;
+    margin-left: -4rem;
+}
+
+nav.navbar, #page {
+    width: 100%;
+    position: relative;
+}
+
+nav.navbar > .container, #page > .section {
+    width: 80%;
+    margin: auto;
+}
+
+.navbar-brand, .navbar-menu {
+    display: inline-block;
+}
+
+.navbar-brand > a > img {
+    width: 35px;
+    height: 35px;
+}
+
+.navbar-menu > ul > li {
+    display: inline-block;
+}
+
+.navbar-menu > ul > li > a {
+    padding: 20px 25px;
+}
+
+.navbar-menu > ul > li > a:hover {
+    background-color: var(--secondary-color);
+}
+
+
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: #000;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+footer > .content > p {
+    padding: 10px 0;
+}
